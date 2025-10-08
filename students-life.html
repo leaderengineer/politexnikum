@@ -61,7 +61,9 @@
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
               <h1 class="heading-title">Talabalar</h1>
-              <p class="mb-0">Politexnikumning eng faol va ijodkor qismini birlashtiruvchi bo‘lim bo‘lib, o‘quvchilarning bilim, tashabbus va iqtidorlarini rivojlantirishga xizmat qiladi. Bu bo‘limda yoshlar nafaqat ta’lim, balki madaniy, sport va ijtimoiy loyihalarda ham faol ishtirok etadilar.</p>
+              <p class="mb-0">Politexnikumning eng faol va ijodkor qismini birlashtiruvchi bo‘lim bo‘lib,
+                o‘quvchilarning bilim, tashabbus va iqtidorlarini rivojlantirishga xizmat qiladi. Bu bo‘limda yoshlar
+                nafaqat ta’lim, balki madaniy, sport va ijtimoiy loyihalarda ham faol ishtirok etadilar.</p>
             </div>
           </div>
         </div>
@@ -90,7 +92,7 @@
 
               <div class="stats-grid">
                 <div class="stat-item">
-                  <div class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="1439"
+                  <div class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="1435"
                     data-purecounter-duration="2">+</div>
                   <div class="stat-label">jami talabalar</div>
                 </div>
@@ -110,10 +112,11 @@
 
           <div class="col-lg-6">
             <div class="image-showcase">
-              <img src="assets/img/education/education-hero.jpg" alt="Students collaborating" class="img-fluid main-image"
-                loading="lazy">
+              <img src="assets/img/education/education-hero.jpg" alt="Students collaborating"
+                class="img-fluid main-image" loading="lazy">
               <div class="floating-image">
-                <img src="assets/img/education/education-student.jpg" alt="Student life" class="img-fluid" loading="lazy">
+                <img src="assets/img/education/education-student.jpg" alt="Student life" class="img-fluid"
+                  loading="lazy">
               </div>
             </div>
           </div>
@@ -140,9 +143,11 @@
                     loading="lazy">
                 </div>
                 <div class="activity-content">
-                  <h4>Tadqiqot va innovatsiya</h4>
-                  <p>Talabalar va ustozlar ilmiy tadqiqotlar orqali zamonaviy yechimlar topadi, yangi texnologiyalar va
-                    metodlarni o‘rganadi hamda akademik va texnologik salohiyatni oshiradi.</p>
+                  <h4>Talabalar bilan sayohat</h4>
+                  <p>Dang‘ara 1-son Politexnikumi o‘quvchilari turli teatr sahnalariga sayohat uyushtirib, madaniy
+                    hordiq chiqardilar. Ushbu
+                    tashriflar yoshlarning san’atga qiziqishini oshirish va dunyoqarashini kengaytirishga xizmat qildi.
+                  </p>
                 </div>
               </div>
             </div>
@@ -169,7 +174,9 @@
                 </div>
                 <div class="activity-content">
                   <h4>Innovatsiyalar markazi</h4>
-                  <p>Politexnikumda faoliyat yuritayotgan Innovatsiyalar markazi o‘quvchilarga zamonaviy texnologiyalar, dasturlash va startap loyihalar ustida ishlash imkoniyatini yaratib, ularning ijodiy va texnik salohiyatini rivojlantirishga xizmat qilmoqda.</p>
+                  <p>Politexnikumda faoliyat yuritayotgan Innovatsiyalar markazi o‘quvchilarga zamonaviy texnologiyalar,
+                    dasturlash va startap loyihalar ustida ishlash imkoniyatini yaratib, ularning ijodiy va texnik
+                    salohiyatini rivojlantirishga xizmat qilmoqda.</p>
                 </div>
               </div>
             </div>
@@ -180,19 +187,22 @@
           <div class="row align-items-center">
             <div class="col-lg-5">
               <div class="testimonial-image">
-                <img src="assets/img/education/students-5.webp" alt="Happy student" class="img-fluid" loading="lazy">
+                <img src="assets/img/person/students.jpg" alt="Happy student" class="img-fluid" loading="lazy">
               </div>
             </div>
 
             <div class="col-lg-7">
               <div class="testimonial-content">
                 <blockquote>
-                  "Bu yerda qo‘llab-quvvatlash tizimi a’lo darajada. Akademik va karera maslahatchilari sizning
-                  muvaffaqiyatingizga e’tibor qiladi. Men talaba sifatida ham, shaxs sifatida ham o‘sdim"
+                  "Bu ilm maskani menga nafaqat kasb o‘rgatdi, balki hayotda o‘z o‘rnimni topish
+                  ishonchini ham berdi. Bu
+                  yerda zamonaviy sharoit, tajribali ustozlar va doimiy qo‘llab-quvvatlovchi muhit mavjud. Shu sababli
+                  men kelajakka dadil
+                  qarayman — aynan shu maskan mening haqiqiy startim bo‘ldi."
                 </blockquote>
                 <div class="testimonial-author">
-                  <h5>Abdulazizova Gulbahor</h5>
-                  <span>Kompyuter fanlari yo‘nalishi, 2024-yil bitiruvchisi</span>
+                  <h5>O'rinboyeva Musharrafxon</h5>
+                  <span>Tikuvchilik yo‘nalishi, 2025-yil bitiruvchisi</span>
                 </div>
               </div>
             </div>
@@ -378,12 +388,28 @@
     const myChart = new Chart(ctx, {
       type: "bar",
       data: {
-        labels: ["1-kurs", "2-kurs", "3-kurs"],
+        labels: ["Kunduzgi (1-kurs)", "Kunduzgi (2-kurs)", "Dual ta'lim (1-kurs)", "Dual ta'lim (2-kurs)", "Kunduzgi (11 baza)"],
         datasets: [{
           label: "Talabalar soni",
-          data: [45, 75, 100],
+          data: [533, 649, 179, 29, 45],
           backgroundColor: "#7c3848"
-        }]
+        },
+        {
+          label: "O'g'il bolalar soni",
+          data: [278, 437, 150, 0, 20],
+          backgroundColor: "#000000"
+        },
+        {
+          label: "Qiz bolalar soni",
+          data: [275, 212, 29, 29, 25],
+          backgroundColor: "#face30"
+        },
+        {
+          label: "Guruhlar soni",
+          data: [18, 24, 6, 1, 2],
+          backgroundColor: "grey"
+        }
+        ]
       }
     });
   </script>
